@@ -1,4 +1,4 @@
-## <head></head>
+## (<head></head>)
 * Web sayfamızın içeriğinde görünmeyecek , sadece sayfamızı tanımlayan etiketlerden oluşacak .
 
 ## <body></body>
