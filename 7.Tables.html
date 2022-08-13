@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+
+    <!-- css yardımıyla tablomuza köşeler verebiliriz burayı ileriki derste daha iyi anlayacaz -->
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid blue;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <!-- Tablomuzun içeriği ve başlığını daha iyi anlamamız için <thead></thead> ve <tbody></tbody> kullanırız-->
+        <thead>
+            <!-- Tabloya satır eklemek için <tr></tr> kullanılır  -->
+            <tr>
+                <!-- Başlıklarımın koyu bir şekilde yazılması içinde <th></th> kullanılır-->
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>UserName</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- içine değerler eklemek için <td></td> kullanılır-->
+                <td>Raşit</td>
+                <td>Eşdemir</td>
+                <td>rasitesdmr</td>
+            </tr>
+            <tr>
+                <td>Ömer</td>
+                <td>Eşdemir</td>
+                <td>omeresdmr</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
