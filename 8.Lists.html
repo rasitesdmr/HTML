@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+
+<!-- 
+    HTML5 de iki çeşit listeleme vardır
+    1 -) Unordered(sırasız) list : Oluşturacağımız elemanın başına nokta koyar 
+-->
+
+<body>
+
+    <!-- Sırasız liste oluşturmak için <ul></ul> kullanılır -->
+    <ul>
+        <!-- Liste elemanlarınıda <li></li> ile oluştururuz-->
+        <li>İlk eleman</li>
+        <li>Son eleman</li>
+    </ul>
+
+    <!-- Eğer elemanın başındaki noktayı daire yapmak istiyorsak type ="circle" kullanırız -->
+    <ul type="circle">
+        <li>İlk eleman</li>
+        <li>Son eleman</li>
+    </ul>
+
+    <!-- Eğer elemanın başındaki noktayı kare yapmak istiyorsak type ="square" kullanırız -->
+    <ul type="square">
+        <li>İlk eleman</li>
+        <li>Son eleman</li>
+    </ul>
+
+    <!-- Eğer elemanın başındaki noktayı kaldırmak istiyorsak type ="none" kullanırız -->
+    <ul type="none">
+        <li>İlk eleman</li>
+        <li>Son eleman</li>
+    </ul>
+
+    <!--
+        Burada yapılan :
+        <ul></ul> ile liste oluşturduk.
+        <li></li> ile listenin içine iki tane eleman ekledik.
+        Peki bu eklediğimiz elemanın içinede eleman eklemek istersek.
+        Elemanın içine bir tane <ul></ul> ile liste oluştururuz.
+        Listenin içine eleman eklemek içinde <li></li> kullanırız.
+     -->
+    <ul>
+        <li>İlk eleman
+            <ul>
+                <li>Raşit</li>
+                <li>Ömer</li>
+            </ul>
+        </li>
+        <li>Son eleman
+            <ul>
+                <li>Yusuf</li>
+                <li>Burhan</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- 
+    HTML5 de iki çeşit listeleme vardır
+    1 -) Ordered(sıralı) list : Oluşturacağımız elemanın başına 1,2,3 veya a,b,c koyar
+    -->
+
+    <!-- Sıralı liste oluşturmak için <ol></ol> kullanırız. -->
+    <ol>
+        <li>İlk Eleman</li>
+        <li>Son Eleman</li>
+    </ol>
+
+    <!-- Elemanımın 1 den değilde istediğim sayıdan başlaması için start="" kullanırız.-->
+    <ol start="10">
+        <li>İlk Eleman</li>
+        <li>Son Eleman</li>
+    </ol>
+
+    <!-- type="" ile istediğim değişken türünde verebilirim. -->
+    <ol type="a">
+        <li>ilk Eleman</li>
+        <li>Son Eleman</li>
+    </ol>
+
+    <!-- ÖRNEK -->
+
+    <ul>
+        <li> 14.08.2025 tarihin de kayıt olan ilk 4 kişi kullanıcılar 
+            <ol >
+                <li>Raşit</li>
+                <li>Ömer</li>
+                <li>Ayşe</li>
+                <li>Samet</li>
+            </ol>
+        </li>
+        
+        <li>15.08.2025 tarihin de kayıt olan son 4 kişi kullanıcılar 
+            <ol start="159">
+                <li>Veli</li>
+                <li>Fırat</li>
+                <li>Ceyda</li>
+                <li>Messi</li>
+            </ol>
+        </li>
+        
+    </ul>
+
+</body>
+
+</html>
