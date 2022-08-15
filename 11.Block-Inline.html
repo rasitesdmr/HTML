@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <!-- 
+        Burda anlatılmak istenen Block elemalarının yükseklik ve genişliğini değiştirebiliyoruz.
+        Inline elemanların yükseklik ve genişliğini değiştiremiyoruz.
+    -->
+    <style>
+        h1 {
+            width: 200px;
+            ;
+            height: 200px;
+        }
+
+        a {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Block level elemanlar içinde bulunduğu bloğun genişlik olarak hepsini kapsayan elemanlardır.-->
+    <h1>Başlık 1</h1>
+
+    <!-- inline elementler ise sadece içeriği kadar yer kaplıyor-->
+    <a href="#">Link</a>
+
+    <!-- 
+        Bunu ilerideki derslerde görecez ama mantığını anlatayım ;
+        style = "display : inline " artık h2 etiketimize  inline özelliği kazandırdık.
+        Yani sadece içeriği kadar yer kaplayacak.
+    -->
+    <h2 style="display: inline ;">Başlık 2</h2>
+</body>
+
+</html>
