@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+
+<!-- Formları oluşturmamız için <form action=""></form> etiketi gerekiyor -->
+
+<!-- 
+    action="process.php" mesela bizim process.php türünde bir dosyamız olabilir. Bu formdaki tüm bilgilerimizi 
+    oraya göndermemizi sağlayacak.
+-->
+
+<!-- HTML5 input  : Bizim yazı yazabildiğimiz veya burda parolamızı girebildiğimiz input alanlarımız -->
+
+<!-- <br> ile inputumuzu aşşağıya indirebiliriz.-->
+
+<!--
+    Eğer biz name üstüne bastığımızda da inputumuza odaklanmasını istiyorsak 
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        for ile id birbirine bağlanmasını sağlıyor
+-->
+
+<!-- input'a veri girdiğimizde onun yakalaması için name="" kullanılır. -->
+
+
+<body>
+    <form>
+        name
+        <input type="text">
+    </form>
+    <form>
+        <label for="name">Name</label> <br>
+        <input type="text" id="name">
+    </form>
+    <form >
+        <label for="adress">Address</label>
+        <input type="text" name="Adress" id="adress">
+    </form>
+</body>
+
+</html>
