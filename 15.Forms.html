@@ -31,17 +31,81 @@
 
 <body>
     <form>
-        name
+        Name1 <br>
         <input type="text">
     </form>
+
     <form>
-        <label for="name">Name</label> <br>
+        <label for="name">Name2</label> <br>
         <input type="text" id="name">
     </form>
-    <form >
-        <label for="adress">Address</label>
-        <input type="text" name="Adress" id="adress">
+
+    <form action="process.php">
+        <label for="name3">Name3</label> <br>
+        <input type="text" name="name3" id="name3" placeholder="username"> <br>
+
+        <label for="email">Email3</label> <br>
+        <!-- input type = "email" yapmamızın sebebi @ formatında girmemiz , yoksa hata atıyor-->
+        <input type="email" name="email" id="email"> <br>
+
+        <label for="password">Password</label> <br>
+        <input type="password" name="password" id="password"> <br>
+
+        <label for="Date">Date</label> <br>
+        <input type="Date" name="Date" id="Date"> <br>
+
+        <!-- Cinsiyet secimi eklemek istersek-->
+        Gender <br>
+        Male
+        <input type="radio" name="gender" id="Male">
+        Female
+        <input type="radio" name="gender" id="Female">
+        Other
+        <!-- Eğer name = "gender" yerine gender2 olsaydı other dahil bir seçim daha yapabiliyorduk. -->
+        <input type="radio" name="gender" id="Other"> <br>
+
+        <!-- Birden fazla seçim örneği yapalım-->
+        Yazılım Dilleri <br>
+        Java
+        <input type="checkbox" name="Java" id="Java">
+        C#
+        <input type="checkbox" name="C#" id="C#">
+        JS
+        <input type="checkbox" name="JS" id="JS"> <br>
+
+        <!-- Eğer direk onaylı bir şekilde gelmesini istiyorsak checked kullanırız-->
+        Okudum Onaylıyorum <br>
+        <input type="checkbox" name="Onaylıyorum" id="Onaylıyorum" checked> <br>
+
+        <!-- Select liste oluşturalım -->
+        <select name="degree" id="degree">
+            <option value="lisans">Lisans</option>
+            <option value="YLS">Yüksek Lisans</option>
+            <!-- selected sayfa yenilediği zaman default gelmesini sağlar -->
+            <option value="OL" selected>Ön lisans</option>
+        </select> <br>
+
+        <!-- mesaj alanı oluşturalım -->
+        <!-- kaç tane satır geleceğini rows kaç tane sütun geleceğini cols ile belirtiriz-->
+        <!-- Yorum alanın içinde default yazı istiyorsak placeholder kullanırız -->
+        <textarea name="message" id="message" rows="5" cols="30" placeholder="Not Bırakın"></textarea> <br>
+
+        <!-- input sayesinde submit ve reset butonları yapabiliyoruz-->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
     </form>
+
+    <form action="process.php">
+        <label for="name">Name4</label> <br>
+        <input type="text" name="name" id="name"> <br>
+
+        <!-- submit butonunu bu şekilde de yapabilirz -->
+        <button type="submit">Gönder</button>
+
+        <!-- Aynı şekilde reset butonuda yapabiliriz-->
+        <button type="reset">Sıfırla</button>
+    </form>
+
 </body>
 
 </html>
